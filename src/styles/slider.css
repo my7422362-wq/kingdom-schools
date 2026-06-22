@@ -1,0 +1,126 @@
+/* Slider Styles */
+
+/* Slider Container */
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/* Slider Image Wrapper */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slider Image */
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  will-change: opacity, transform;
+}
+
+/* Dark Overlay */
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Slider Dots Navigation */
+.slider-dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+/* Individual Dot */
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  outline: none;
+}
+
+.slider-dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.slider-dot:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+}
+
+/* Active Dot */
+.slider-dot.active {
+  background-color: #f59e0b;
+  transform: scale(1.1);
+}
+
+/* Dot Focus State */
+.slider-dot:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+}
+
+/* Responsive Dots */
+@media (max-width: 640px) {
+  .slider-dots {
+    bottom: 1.5rem;
+    gap: 0.75rem;
+  }
+
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Slider Animation Keyframes */
+@keyframes sliderFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sliderFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Smooth transitions for slider dots */
+.slider-dot {
+  will-change: background-color, transform;
+  backface-visibility: hidden;
+}
+

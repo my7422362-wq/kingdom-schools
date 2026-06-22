@@ -1,0 +1,497 @@
+/* About School Page Styles */
+
+/* Variables */
+:root {
+  --dark-teal: #0f5c5c;
+  --gold: #b89b55;
+  --text-color: #333;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+}
+
+/* Main Container */
+.about-school-page {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  text-align: right;
+  color: var(--text-color);
+  background-color: var(--white);
+  min-height: 100vh;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: var(--gold);
+  transform: scale(1.1);
+}
+
+.back-button svg {
+  width: 24px;
+  height: 24px;
+  color: var(--dark-teal);
+  transition: color 0.3s ease;
+}
+
+.back-button:hover svg {
+  color: var(--white);
+}
+
+/* Content Section */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 2rem 2rem;
+  text-align: center;
+}
+
+.about-school-logo {
+  margin-bottom: 2rem;
+}
+
+.about-school-logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: var(--white);
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  color: var(--dark-teal);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  line-height: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Footer Section */
+.about-footer {
+  background-color: var(--dark-teal);
+  color: var(--white);
+  padding: 3rem 0 1rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Footer Logos */
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.footer-logo-placeholder:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-logo-placeholder svg {
+  width: 40px;
+  height: 40px;
+  color: var(--gold);
+}
+
+.footer-logo-item span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Footer Contact */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-email {
+  font-size: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: var(--gold);
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-social a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer Links */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer-links-column h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: var(--gold);
+}
+
+.footer-links-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-column li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links-column a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.footer-links-column a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.footer-links-column a:hover {
+  color: var(--gold);
+}
+
+.footer-links-column a:hover::after {
+  width: 100%;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .about-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-school-logo img {
+    width: 130px;
+    height: 130px;
+    padding: 1.25rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .footer-logos {
+    gap: 2rem;
+  }
+
+  .footer-logo-placeholder {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-logo-placeholder svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-school-logo img {
+    width: 110px;
+    height: 110px;
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .about-footer {
+    padding: 2rem 0 1rem;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+
+  .footer-logos {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-logo-item {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+
+  .footer-logo-placeholder {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-logo-placeholder svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-logo-item span {
+    font-size: 0.8rem;
+  }
+
+  /* Keep footer links in 3 columns on mobile - evenly distributed */
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-links-column h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-links-column ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-column li {
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-links-column a {
+    font-size: 0.75rem;
+  }
+
+  /* Evenly space social media icons on mobile */
+  .footer-social {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+  }
+
+  .footer-social a {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .footer-social svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Adjust email for mobile */
+  .footer-email {
+    font-size: 0.85rem;
+  }
+
+  .footer-copyright p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .about-content {
+    padding: 2rem 1rem;
+  }
+
+  .about-school-logo img {
+    width: 100px;
+    height: 100px;
+    padding: 0.75rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  /* Keep logos in row on very small screens, just smaller */
+  .footer-logos {
+    flex-direction: row;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-logo-item {
+    flex: 0 0 calc(33.333% - 0.5rem);
+  }
+
+  .footer-logo-placeholder {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-logo-placeholder svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-logo-item span {
+    font-size: 0.65rem;
+  }
+
+  /* Maintain 3 columns for footer links on very small screens */
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .footer-links-column h4 {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links-column a {
+    font-size: 0.65rem;
+  }
+
+  /* Even smaller social icons for very small screens */
+  .footer-social {
+    gap: 0.35rem;
+    padding: 0 0.25rem;
+  }
+
+  .footer-social a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-social svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .footer-email {
+    font-size: 0.75rem;
+  }
+
+  .footer-copyright p {
+    font-size: 0.7rem;
+  }
+}
+
