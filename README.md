@@ -1,16 +1,127 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A responsive, modern school website built with **React** and **Vite**. This front-end project showcases school information, educational services, programs, calendars, news, and a contact/registration section.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> **Recommended GitHub repo name:** `school-website-react-vite`
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🌍 **Responsive Design** (mobile-first layout)
+- 📚 **School Overview & About Section**
+- 🧩 **Programs & Educational Services**
+- 🗓️ **Academic & Month Calendar** components
+- 🧑‍🏫 **Educational Team** showcase
+- 📰 **News Section**
+- 🎬 **Image/Video Highlight Section**
+- 🧾 **Registration / Contact** page and modal
+- 🔝 **Scroll to Top** convenience feature
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+- **React**
+- **Vite**
+- **JavaScript (ES6+)**
+- **CSS** (component styles)
+- **react-router-dom** (routing)
+- **framer-motion** (animations)
+- **prop-types**
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/school-website-react-vite.git
+   ```
+
+2. **Move into the project folder**
+   ```bash
+   cd school-website-react-vite
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+---
+
+## ▶️ Run the Project Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Then open the URL shown in your terminal (usually `http://localhost:5173`).
+
+---
+
+## 🧪 Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📸 Screenshots
+
+Add your screenshots here:
+
+1. Homepage / Hero section
+2. About & Services
+3. Programs & Team
+4. Calendar
+5. Registration / Contact
+
+> Example:
+> - `screenshots/home.png`
+> - `screenshots/about.png`
+
+---
+
+## 🌐 Live Demo
+
+Link your deployed project here:
+
+- **Live Demo:** https://kinddomschool.netlify.app/
+
+---
+
+## 🧑‍💻 Project Structure (Quick Overview)
+
+- `src/components/` → UI components (Navbar, Hero, Calendars, Sections…)
+- `src/styles/` → Reusable CSS styles per section/component
+- `src/hooks/` → Custom hooks (e.g., scroll animations)
+- `public/` → Static assets (images, logo, etc.)
+
+---
+
+## ✅ Contributing
+
+Contributions are welcome! If you want to improve the UI, add sections, or fix issues:
+
+1. Fork the repo
+2. Create your feature branch
+3. Commit changes
+4. Open a Pull Request
+
+---
+
+## 📄 License
+
+Add your license information here (e.g., MIT).
+
